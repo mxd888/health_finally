@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "娱乐",
+  "backgroundTextStyle": "dark",    
+  "enablePullDownRefresh": true, 
+  "usingComponents": {}
+}

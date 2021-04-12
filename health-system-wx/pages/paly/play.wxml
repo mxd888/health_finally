@@ -1,0 +1,92 @@
+<!--pages/paly/play.wxml-->
+<!-- 轮播 -->
+ <view>
+      <swiper
+        indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" circular="{{circular}}" vertical="{{vertical}}"
+        interval="{{interval}}" duration="{{duration}}" previous-margin="{{previousMargin}}px" next-margin="{{nextMargin}}px">
+        <block wx:for="{{background}}" wx:key="*this">
+          <swiper-item>
+            <view class="swiper-item {{item}}"></view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="page-section" style="margin-top: 0rpx;margin-bottom: 40rpx;">
+      <view class="weui-cells weui-cells_after-title">
+        <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__bd">指示点</view>
+          <view class="weui-cell__ft">
+            <switch checked="{{indicatorDots}}" bindchange="changeProperty" data-property-name="indicatorDots" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__bd">自动播放</view>
+          <view class="weui-cell__ft">
+            <switch checked="{{autoplay}}" bindchange="changeProperty" data-property-name="autoplay" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__bd">衔接滑动</view>
+          <view class="weui-cell__ft">
+            <switch checked="{{circular}}" bindchange="changeProperty" data-property-name="circular" />
+          </view>
+        </view>
+        <view class="weui-cell weui-cell_switch">
+          <view class="weui-cell__bd">竖向</view>
+          <view class="weui-cell__ft">
+            <switch checked="{{vertical}}" bindchange="changeProperty" data-property-name="vertical" />
+          </view>
+        </view>
+      </view>
+    </view>
+
+<!-- 轮播结束 -->
+
+
+<view class='box_padding'>
+<navigator class='box box_02'  url= "video/video" target= "self">
+            <view class='box_topic'>   
+                <view class='box_icon'></view>
+                <text> 音乐会 </text>
+                <view class='box_yellow'>1</view>
+            </view>
+            <view class='box_image'  style='background-image:url("http://112.124.96.85:10080/images/yinyue.jpg")'> 
+            </view>
+    </navigator> 
+    </view>
+
+<view class='box_padding'>
+    <navigator class='box box_02'  url= "audio/audio" >
+            <view class='box_topic'>   
+                <view class='box_icon'></view>
+                <text> 电影会</text>
+                <view class='box_yellow'>2</view>
+            </view>
+            <view class='box_image'  style='background-image:url("http://112.124.96.85:10080/images/dianying.jpg")'> 
+            </view>
+    </navigator> 
+ </view>
+
+ <view class='box_padding'>
+    <navigator class='box box_02'  url= "tou/tou" >
+            <view class='box_topic'>   
+                <view class='box_icon'></view>
+                <text> 投诉会</text>
+                <view class='box_yellow'>3</view>
+            </view>
+            <view class='box_image'  style='background-image:url("http://112.124.96.85:10080/images/tousu.jpg")'> 
+            </view>
+    </navigator> 
+ </view>
+
+  <view class='box_padding'>
+    <navigator class='box box_02'  url= "map/map" >
+            <view class='box_topic'>   
+                <view class='box_icon'></view>
+                <text> 地图会</text>
+                <view class='box_yellow'>4</view>
+            </view>
+            <view class='box_image'  style='background-image:url("http://112.124.96.85:10080/images/ditu.jpg")'> 
+            </view>
+    </navigator> 
+ </view>

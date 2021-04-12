@@ -1,0 +1,231 @@
+@import "./weui.wxss";
+/* pages/paly/play.wxss */
+page{
+  height:100%;
+  background-color: #F8F8F8;
+  font-size: 32rpx;
+  line-height: 1.6;
+}
+.box_container{
+  width:750rpx;
+  height:100%;
+
+}
+.jcs_container{
+ 
+  /* opacity: 0; */
+  width:750rpx;
+
+  
+  
+
+  /* overflow: scroll; */
+
+ 
+}
+/* .jcs_container_active{
+  opacity: 1;
+  transition: opacity 0.5s linear;
+} */
+.topbar{
+  width:680rpx;
+  height:68rpx;
+  margin: 0 auto;
+  margin-bottom: 30rpx;
+  background-color: white;
+   border-bottom: 2rpx solid #ccc;
+   border-top: 2rpx solid #ccc;
+   display: flex;
+   align-items: center;
+  
+   background: url('http://112.124.96.85:10080/images/14812438-dff39d8777656230.jpg');
+   background-size: cover;
+   background-position: top;
+   font-size: 30rpx;
+   padding-left: 30rpx;
+   color:#ccc;
+   box-sizing: border-box;
+   border-radius: 10rpx;
+
+     
+  
+}
+
+
+.box_padding
+{
+  padding: 30rpx 0;
+}
+.box_02{
+ 
+  width:680rpx;
+  height:520rpx;
+ margin: 0 auto;
+ 
+
+
+  border-radius: 30rpx;
+ background-color: white;
+ box-shadow:  2rpx -2rpx 15rpx #ccc;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+
+
+
+}
+
+.box_topic
+{
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+
+ 
+}
+.box_icon{
+  width:60rpx;
+  height:60rpx;
+  
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  background:repeating-radial-gradient(circle at center center,black 0,black 10%,white 10%,white 20%);
+}
+.box_yellow{
+  width:100rpx;
+  height:50rpx;
+  background-color: rgb(245, 221, 178);
+  margin-left: 20rpx;
+  color:orange;
+  font-size: 24rpx;
+
+  text-align: center;
+  line-height: 50rpx;
+}
+.box_image
+{ 
+  flex-grow: 6;
+ 
+
+ background-position: center;
+  background-size: cover;
+}
+.box_bottom{
+  
+flex-grow: 2;
+display: flex;
+align-items: center;
+margin-top: -30rpx;
+margin-left: 20rpx;
+font-size: 42rpx;
+   
+}
+
+
+
+
+.page-body{
+  padding-top: 60rpx;
+}
+.page-section{
+  width: 100%;
+}
+.page-section_center{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.page-section:last-child{
+  margin-bottom: 0;
+}
+.page-section-gap{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+}
+.page-section-title{
+  font-size: 28rpx;
+  color: #999999;
+  margin-bottom: 10rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.page-section-gap .page-section-title{
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.demo-text-1{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background:  url('http://112.124.96.85:10080/images/tijian.jpg');
+  color: #d62525;
+  font-size: 50rpx;
+}
+.demo-text-1:before{
+  content: '刘';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-2{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background:  url('http://112.124.96.85:10080/images/yundong.jpg');
+  color: #FFFFFF;
+  font-size: 50rpx;
+  width: 100%;
+  height: 100%;
+}
+.demo-text-2:before{
+  content: '广';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.demo-text-3{
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  background:  url('http://112.124.96.85:10080/images/xinli.jpg');
+  color: #353535;
+  font-size: 50rpx;
+}
+.demo-text-3:before{
+  content: '辉';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+button{
+  margin-bottom: 30rpx;
+}
+button:last-child{
+  margin-bottom: 0;
+}
+.page-section-title{
+  padding: 0;
+}
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+.page-section-title{
+  margin-top: 60rpx;
+  position: relative;
+}
+.info{
+  position: absolute;
+  right: 0;
+  color: #353535;
+  font-size: 30rpx;
+}
+.page-foot{
+  margin-top: 50rpx;
+}

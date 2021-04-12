@@ -1,0 +1,19 @@
+<scroll-view class="jcs_container"  scroll-with-animation='true' scroll-y="true"  scroll-top='{{scrollTop}}'
+bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'
+>
+
+<view class='box_top'>
+  <text></text>
+</view>
+
+<view bindtap="next" class='box box_02' wx:key="index" wx:for="{{data.info}}"  style='background-image:url("{{item.image}}")'>
+   <view class="text_container">
+      <view class='text_topic'>{{item.title}}</view>
+      <view  wx:for="{{item.content}}" wx:for-item="content" wx:key="index"  wx:for-index='content_index'>
+       <view class="{{index==0&&content_index==1?'next_read':'text_content'}}">{{content}}</view>
+       <view class='icon'></view>
+      </view>
+   </view>  
+</view> 
+
+</scroll-view>

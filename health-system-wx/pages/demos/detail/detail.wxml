@@ -1,0 +1,47 @@
+<!--pages/demos/detail/detail.wxml-->
+<view>
+  <view class='top_image'  style='background-image:url("{{data.image_top}}")'>
+
+  </view>
+
+  <view class='content'>
+    <view    class='topbar'  style="position:{{barfix?'fixed;top:0':''}}">
+     <view  data-id='0' bindtap='activeClick' class="select  {{barId=='0'?'tapbar_active':'tapbar_activef'}} "  >项目介绍   </view>
+
+     
+     <view  wx:if="{{data.demo_index!='5'}}" data-id='1' bindtap='activeClick' class="select  {{barId=='1'?'tapbar_active':'tapbar_activef'}}"  >图片详情       </view>
+     <view wx:if="{{data.demo_index!='5'}}"  data-id='2'bindtap='activeClick'  class="select {{barId=='2'?'tapbar_active':'tapbar_activef'}}" >核心代码       </view>
+     <view wx:if="{{data.demo_index!='5'}}" data-id='3' bindtap='activeClick' class="select  {{barId=='3'?'tapbar_active':'tapbar_activef'}} "  >我的详情   </view>
+
+
+    </view>
+  
+    <view class="content_info {{show==true?'content_info_active':''}}">
+
+      <view class="content_pub content_demo {{barId=='0'?'info_active':'info_activef'}} ">
+        <view wx:for='{{data.demoinfo}}'  wx:key="index" > <text >{{item}} </text></view>
+      </view>
+
+      <view class="content_pub content_iamges {{barId=='1'?'info_active ':'info_activef'}} ">
+          <image wx:for='{{data.images}}'  wx:key="index"  src='{{item}}' mode="widthFix"></image>
+         
+      </view>
+
+      <view class="content_pub content_skills  {{barId=='2'?'info_active':'info_activef'}}">
+              <my-component wx:for='{{data.probs}}'  wx:key="index"  imgurl="{{item.imgurl}}" dsc="{{item.dsc}}">
+            <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
+        
+            </my-component>
+         
+        
+      </view>
+
+
+      <view class="content_pub content_demo {{barId=='3'?'info_active':'info_activef'}} ">
+        <view wx:for='{{data.yundonginfo}}'  wx:key="index" > <text >{{item}} </text></view>
+      </view>
+
+    </view>
+
+ </view>
+</view>

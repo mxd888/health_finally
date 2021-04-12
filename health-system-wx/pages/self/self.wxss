@@ -1,0 +1,91 @@
+/* pages/self/self.wxss */
+page{
+  height:100%;
+}
+.jcs_box{
+
+  width:750rpx;
+  height:100%;
+  background: url('http://112.124.96.85:10080/images/14812438-980b6905a4295d31.jpg');  
+  background-size: cover;
+  background-position: center;
+ 
+}
+
+
+.self_container
+{ 
+
+height: 100%;
+
+display: flex;
+justify-content: center;
+align-items: center;
+z-index: 0;
+}
+.self_info{
+
+  width:600rpx;
+height:900rpx;
+border-radius: 4rpx;
+  background: url('http://112.124.96.85:10080/images/14812438-dff39d8777656230.jpg'); 
+    background-size: cover;
+  background-position: center;
+ box-shadow:  -20rpx 20rpx 15rpx #ccc;
+position: absolute;
+  display: flex;
+ z-index: 999;
+  color:rgb(240, 240, 240);
+ 
+
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+}
+
+.self_img image{
+  width:200rpx;
+  height:200rpx;
+  border-radius: 50%;
+  margin-top: 30rpx;
+
+
+}
+.self_name{
+  align-self: center;
+  margin: 20rpx 0rpx;
+  font-size: 48rpx;
+  color:orange;
+  
+
+}
+.self_job{
+  font-size: 28rpx;
+
+}
+.self_desc{
+   margin: 20rpx 40rpx;
+   font-size:32rpx;
+   letter-spacing: 2rpx;
+   text-indent: 64rpx;
+   
+   
+}
+.self_icon{
+  width:300rpx;
+  margin-top: 20rpx;
+display: flex;
+justify-content:space-around;
+
+}
+.self_icon image{
+  border: 1px solid white;
+  background-color: white;
+  width:80rpx;
+  height:80rpx;
+  opacity: 0.8;
+  border-radius: 50%;
+
+}
+
+

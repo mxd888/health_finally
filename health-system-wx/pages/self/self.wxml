@@ -1,0 +1,32 @@
+
+<view class="jcs_box"
+  bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'>
+
+
+  <view class="self_container ">
+
+    
+
+    <view class='self_info'>
+    <block wx:if="{{!hasUserInfo}}">
+      <button wx:if="{{canIUseGetUserProfile}}" bindtap="getUserProfile">授权登录</button>
+    </block>
+
+          <view class='self_img'>
+          <image src='{{userInfo.avatarUrl}}'></image>
+          </view>
+          <view class='self_name'>{{userInfo.nickName}}</view>
+          <view class='self_job'>.</view>
+          <view class='self_desc'>{{health}}</view>
+          <view class='self_icon'>
+          <image src='http://112.124.96.85:10080/images/wx.png' bindtap='wx_click'
+          data-index='0'></image>
+          <image src='http://112.124.96.85:10080/images/qq.png' bindtap='wx_click'
+          data-index="1"> </image>
+          </view> 
+    </view> 
+  </view>
+
+
+
+</view>

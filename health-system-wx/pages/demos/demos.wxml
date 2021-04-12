@@ -1,0 +1,25 @@
+<view class='box_container'>
+<view class='topbar' bindtap='returnTop'>回到顶部</view>
+
+<scroll-view bindscroll='scroll' style="height:{{scroll_height}}rpx" scroll-with-animation='true' scroll-y="true"  scroll-top='{{scrollTop}}'class="jcs_container " 
+bindtouchstart='touchStart' bindtouchmove='touchMove' bindtouchend='touchEnd'
+>
+    <view  wx:for="{{data.info}}"  wx:key="index" class='box_padding'>
+    <navigator class='box box_02'  url= "detail/detail?index={{item.index}}" >
+            <view class='box_topic'>   
+                <view class='box_icon'></view>
+                <text> {{item.title}}</text>
+                <view class='box_yellow'>{{item.index}}</view>
+            </view>
+            <view class='box_image'  style='background-image:url("{{item.image}}")'> 
+            </view>
+              <view class='box_bottom'>
+              <view>{{item.content}}</view>
+              </view>
+    </navigator> 
+    </view>
+  </scroll-view>
+
+   
+
+  </view>

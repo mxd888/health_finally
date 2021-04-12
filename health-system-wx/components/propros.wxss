@@ -1,0 +1,29 @@
+/* propros.wxss */
+.wrapper {
+
+border-bottom: 1px dashed #333;
+margin-bottom: 40rpx;
+
+}
+.wrapper .wrapper_top{
+
+
+  margin-bottom: 20rpx;
+}
+.wrapper .title{
+  font-size: 26rpx;
+  color:orangered;
+
+
+}
+.wrapper .desc{
+  font-size: 30rpx;
+  color:#666;
+}
+.wrapper .image{
+
+ width:100%;
+  border-radius: 30rpx;
+  border: 1rpx solid rgb(241, 236, 236);
+  margin-bottom: 20rpx;
+}

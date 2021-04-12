@@ -1,0 +1,4 @@
+/* pages/paly/audio/audio.wxss */
+.myvideo {
+  width: 100%;
+  }

@@ -1,0 +1,10 @@
+<!--propros.wxml-->
+<view class="wrapper">
+<view class="wrapper_top">
+  <text class="title">描述：</text> 
+  <text class="desc">{{dsc}}</text>
+</view>
+
+  <image src="{{imgurl}}" mode="widthFix"></image>
+  <slot></slot>
+</view>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.health.modules.user.dao.UserDao">
+
+	<!-- 可根据自己的需求，是否要使用 -->
+    <resultMap type="com.health.modules.user.entity.UserEntity" id="userMap">
+        <result property="userId" column="user_id"/>
+        <result property="nickName" column="nick_name"/>
+        <result property="avatarUrl" column="avatar_url"/>
+        <result property="health" column="health"/>
+        <result property="city" column="city"/>
+        <result property="country" column="country"/>
+        <result property="gender" column="gender"/>
+        <result property="language" column="language"/>
+        <result property="province" column="province"/>
+        <result property="openId" column="open_id"/>
+        <result property="sessionKey" column="session_key"/>
+        <result property="time" column="time"/>
+    </resultMap>
+
+
+</mapper>
